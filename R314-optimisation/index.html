@@ -4,9 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Site vitrine</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js"></script>
-  </head>
+    
+    <style>
+      /* Collez ici le CSS essentiel pour le 'topbar', le 'hero' et les polices 
+      pour que la page apparaisse mise en forme immédiatement.
+      */
+    </style>
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    
+    </head>
   <body>
     <div class="topbar">
       <div class="container nav">
@@ -34,22 +41,39 @@
         <h2>Galerie</h2>
         <div class="grid">
           <div class="card">
-            <a href="img1.html"><img src="img/img1.jpg" alt="Image 1" /></a>
+            <a href="img1.html">
+                <img src="img/img1.jpg" alt="Image 1" width="3968" height="2240" loading="lazy" />
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img2.html"><img src="img/img2.jpg" alt="Image 2" /></a>
+            <a href="img2.html">
+                <img src="img/img2.jpg" alt="Image 2" width="2040" height="1530" loading="lazy" />
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img3.html"><img src="img/img3.jpg" alt="Image 3" /></a>
+            <a href="img3.html">
+                <img src="img/img3.jpg" alt="Image 3" width="3968" height="2240" loading="lazy" />
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img4.html"><img src="img/img4.jpg" alt="Image 4" /></a>
+            <a href="img4.html">
+                <img src="img/img4.jpg" alt="Image 4" width="3968" height="2240" loading="lazy" />
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img5.html"><img src="img/img5.jpg" alt="Image 5" /></a>
+            <a href="img5.html">
+                <img src="img/img5.jpg" alt="Image 5" width="3968" height="2240" loading="lazy" />
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img6.html"><img src="img/img6.jpg" alt="Image 6" /></a>
+            <a href="img6.html">
+                <img src="img/img6.jpg" alt="Image 6" width="3968" height="2240" loading="lazy" />
+            </a>
           </div>
         </div>
       </div>
@@ -102,6 +126,8 @@
         <p>© 2025 — BUT MMI Béziers - MAURIN N.</p>
       </div>
     </div>
+    
+    <script src="js/script.js" defer></script>
     <script src="js/metrics.js" defer></script>
   </body>
 </html>
