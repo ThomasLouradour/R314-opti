@@ -6,7 +6,7 @@
     <title>Site vitrine</title>
     
     <style>
-      /* CSS Critique : ... (Laisser ici tout le CSS que j'ai extrait précédemment) ... */
+      /* Style de base et pour les éléments "au-dessus de la ligne de flottaison" (topbar et hero) */
       :root{--bg:#0f1226;--fg:#E8ECF1;--muted:#93A1B1;--primary:#7C5CFF;--accent:#06D6A0;--card:#15193A;--shadow:rgba(0,0,0,0.45)}
       *{box-sizing:border-box}
       html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif}
@@ -20,14 +20,14 @@
       .cta:hover{transform:translateY(-2px);box-shadow:0 28px 60px rgba(124,92,255,.45)}
     </style>
     
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" /></noscript>
 
-    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
-    
     <script src="js/script.js" defer></script> 
   </head>
   <body>
@@ -58,25 +58,56 @@
         <div class="grid">
           <div class="card">
             <a href="img1.html">
-                <img src="img/img1.jpg" alt="Image 1" width="3968" height="2240" fetchpriority="high" />
+                <picture>
+                    <source srcset="img/img1.webp" type="image/webp" />
+                    <img src="img/img1.jpg" alt="Image 1" width="3968" height="2240" fetchpriority="high" />
+                </picture>
             </a>
           </div>
+          
           <div class="card">
             <a href="img2.html">
-                <img src="img/img2.jpg" alt="Image 2" width="2040" height="1530" loading="lazy" />
+                <picture>
+                    <source srcset="img/img2.webp" type="image/webp" />
+                    <img src="img/img2.jpg" alt="Image 2" width="2040" height="1530" loading="lazy" />
+                </picture>
             </a>
           </div>
+          
           <div class="card">
-            <a href="img3.html"><img src="img/img3.jpg" alt="Image 3" width="3968" height="2240" loading="lazy" /></a>
+            <a href="img3.html">
+                <picture>
+                    <source srcset="img/img3.webp" type="image/webp" />
+                    <img src="img/img3.jpg" alt="Image 3" width="3968" height="2240" loading="lazy" />
+                </picture>
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img4.html"><img src="img/img4.jpg" alt="Image 4" width="3968" height="2240" loading="lazy" /></a>
+            <a href="img4.html">
+                <picture>
+                    <source srcset="img/img4.webp" type="image/webp" />
+                    <img src="img/img4.jpg" alt="Image 4" width="3968" height="2240" loading="lazy" />
+                </picture>
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img5.html"><img src="img/img5.jpg" alt="Image 5" width="3968" height="2240" loading="lazy" /></a>
+            <a href="img5.html">
+                <picture>
+                    <source srcset="img/img5.webp" type="image/webp" />
+                    <img src="img/img5.jpg" alt="Image 5" width="3968" height="2240" loading="lazy" />
+                </picture>
+            </a>
           </div>
+          
           <div class="card">
-            <a href="img6.html"><img src="img/img6.jpg" alt="Image 6" width="3968" height="2240" loading="lazy" /></a>
+            <a href="img6.html">
+                <picture>
+                    <source srcset="img/img6.webp" type="image/webp" />
+                    <img src="img/img6.jpg" alt="Image 6" width="3968" height="2240" loading="lazy" />
+                </picture>
+            </a>
           </div>
         </div>
       </div>
@@ -130,6 +161,6 @@
       </div>
     </div>
     
-    <script src="js/metrics.js" defer></script> 
+    <script src="js/metrics.js" defer></script>
   </body>
 </html>
