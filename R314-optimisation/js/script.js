@@ -2,9 +2,7 @@
 (function(){
   
   window.addEventListener('load', function(){
-    // La boucle bloquante de 1 seconde a été supprimée.
-
-    // Conservation de la logique d'ajout de classe 'loaded' pour les images
+    // La logique d'ajout de classe 'loaded' pour les images
     const imgs = document.querySelectorAll('.card img');
     imgs.forEach(img => { 
       if (img.complete) {
