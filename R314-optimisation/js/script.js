@@ -1,7 +1,5 @@
-/* script.js — Code optimisé, tous les goulets d'étranglement artificiels (2s + 1s de blocage) ont été supprimés. */
+/* script.js — Code optimisé. Le blocage de 3 secondes a été supprimé. */
 (function(){
-  
-  // Le code qui bloquait le thread principal pendant 2 secondes a été supprimé.
   
   window.addEventListener('load', function(){
     // La boucle bloquante de 1 seconde a été supprimée.
